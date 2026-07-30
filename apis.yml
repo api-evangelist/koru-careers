@@ -1,23 +1,69 @@
 aid: koru-careers
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/koru-careers.png
 name: Koru Careers
-description: Koru Careers is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Koru (joinkoru.com) was a Seattle-based predictive hiring and people-analytics
+  SaaS company. Its platform built a per-employer "predictive hiring fingerprint" and
+  scored candidates against the Koru7 Impact Skills assessment — Grit, Rigour, Impact,
+  Teamwork, Curiosity, Ownership and Polish — via a 20-minute online pre-interview
+  that produced a Candidate Fit Score, with the stated goal of increasing quality of
+  hire and reducing screening bias. Products were marketed as Koru Hire and Koru Develop.
+  The company was acquired by Cappfinity: between February and November 2020 joinkoru.com
+  began redirecting to koru.cappfinity.com, where the Koru7 Impact Skills Assessment
+  was carried as a Cappfinity product. That subdomain now redirects to cappfinity.com,
+  which carries no remaining Koru branding, and the joinkoru.com domain has lapsed
+  and currently serves unrelated online-gambling affiliate content. Koru published
+  no public developer portal, documentation, or API; this profile is retained as a
+  historical record of a defunct company and no live endpoints are catalogued.'
 url: https://raw.githubusercontent.com/api-evangelist/koru-careers/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: defunct-no-api-surface
+x-status: defunct
+x-status-detail: Acquired by Cappfinity and brand retired; joinkoru.com domain has
+  lapsed and been repurposed by an unrelated party.
+x-acquired-by: Cappfinity
+x-successor-url: https://cappfinity.com/
+x-former-url: https://www.joinkoru.com/
+x-domain-warning: joinkoru.com no longer belongs to this company and currently serves
+  unrelated online-gambling affiliate content — do not link to it.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Human Resources
+- Recruiting
+- Talent Acquisition
+- People Analytics
+- Assessments
+- Hiring
+- Defunct
 apis: []
+common:
+- type: Review
+  name: API Evangelist enrichment review
+  url: review.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
