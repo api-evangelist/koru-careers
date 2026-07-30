@@ -1,0 +1,110 @@
+generated: '2026-07-19'
+method: searched
+source: https://web.archive.org/web/20191206132444/https://www.joinkoru.com/
+slug: koru-careers
+name: Koru Careers
+status: defunct
+summary: >-
+  Enrichment pass found no live company surface. Koru was a predictive hiring /
+  people-analytics SaaS at joinkoru.com, acquired by Cappfinity (brand since
+  retired). The joinkoru.com domain has lapsed and now serves unrelated
+  online-gambling affiliate content. No developer portal, documentation,
+  OpenAPI, SDKs, or any other API artifact exists to harvest, so no technical
+  artifacts were written and no scoring pointers were emitted.
+company:
+  former_url: https://www.joinkoru.com/
+  products:
+  - Koru Hire
+  - Koru Develop
+  - Koru7 Impact Skills Assessment
+  impact_skills:
+  - Grit
+  - Rigour
+  - Impact
+  - Teamwork
+  - Curiosity
+  - Ownership
+  - Polish
+  acquired_by: Cappfinity
+  successor_url: https://cappfinity.com/
+evidence:
+- check: live homepage fetch
+  url: https://joinkoru.com/
+  status: 403
+  note: Cloudflare "Attention Required!" interstitial; no company content served.
+- check: dns
+  domain: joinkoru.com
+  a_records:
+  - 104.21.37.50
+  - 172.67.203.247
+  mx_records: []
+  txt_records: []
+  note: No MX and no TXT (no SPF/DMARC) — domain carries no corporate mail or email
+    authentication posture.
+- check: archived homepage (last real Koru content)
+  url: https://web.archive.org/web/20191206132444/https://www.joinkoru.com/
+  status: 200
+  title: Predictive Hiring for Fit - People Analytics Software | Koru
+  note: WordPress marketing site; nav covered Solutions, Koru Hire, Koru Develop,
+    About, Koru7 Impact Skills, Resources, Login, Request a Demo. No developer,
+    docs, or API section present.
+- check: archived redirect (acquisition evidence)
+  url: https://web.archive.org/web/20200205174117/http://www.joinkoru.com/
+  status: 301
+  location: https://www.joinkoru.com/
+  note: Still self-hosted as of 2020-02-05.
+- check: archived redirect (acquisition evidence)
+  url: https://web.archive.org/web/20201109225904/http://www.joinkoru.com/
+  status: 301
+  location: http://koru.cappfinity.com/
+  note: By 2020-11-09 joinkoru.com redirected to Cappfinity — bounds the acquisition
+    between 2020-02 and 2020-11.
+- check: archived successor page
+  url: https://web.archive.org/web/20210415000000/http://koru.cappfinity.com/
+  status: 200
+  title: Koru – Cappfinity
+  note: Koru7 Impact Skills Assessment carried as a Cappfinity product in 2021.
+- check: live successor host
+  url: https://koru.cappfinity.com/
+  status: 200
+  final_url: https://cappfinity.com/
+  note: Subdomain now redirects to the Cappfinity root; zero "Koru" occurrences in
+    the served HTML — brand fully retired.
+- check: current joinkoru.com content (archived)
+  url: https://web.archive.org/web/20260119173313/https://www.joinkoru.com/
+  status: 200
+  title: Best Florida Online Casinos | Top 10 FL Gambling Sites in 2026
+  note: Lapsed domain repurposed as an online-gambling affiliate site (residual
+    wp-content/themes/koru path confirms the same WordPress install lineage). Do
+    not link this domain from any API Evangelist property.
+artifacts_attempted:
+  packages: none — no registry presence and no SDK/source links to derive from
+  well_known: skipped — no company-controlled host to probe (joinkoru.com is third-party
+    controlled, cappfinity.com is a different company)
+  mcp: none — no OpenAPI to derive candidate tools from
+  llms_txt: none — nothing factual to describe beyond this review
+  overlays: none — no openapi/ files
+  grpc: none
+  conformance: none — no spec or published compliance claims
+  errors: none — no spec
+  lifecycle: none — no versioning, deprecation, SLA, or status page
+  scopes: none — no OAuth surface
+  authentication: none — no securitySchemes to derive from
+  domain_security: skipped — probing joinkoru.com would record the squatter's posture,
+    not the company's
+  vulnerability_disclosure: none
+  trust_center: none
+  sandbox: none
+  conventions: none — no spec or docs
+  changelog: none
+  cli: none
+  components: none
+  data_model: none — no spec
+  decline_codes: n/a — not a payments provider
+  asyncapi: none — no event or webhook surface
+  skills: skipped — no OpenAPI to ground skills in
+recommendation: >-
+  Retain as a defunct historical record. No further enrichment rounds are
+  warranted unless the Koru brand is revived. If the network wants the live
+  successor covered, profile Cappfinity as its own entry rather than extending
+  this one.
